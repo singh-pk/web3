@@ -1,0 +1,6 @@
+{
+  "version": "independent",
+  "npmClient": "yarn",
+  "packages": ["client", "solana/*", "solana/**/app", "common"],
+  "useWorkspaces": true
+}

@@ -1,0 +1,20 @@
+{
+  "name": "git-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "singh-pk <pksn1111@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "client",
+    "solana/*",
+    "solana/**/app",
+    "common"
+  ],
+  "devDependencies": {
+    "lerna": "^5.1.1"
+  },
+  "scripts": {
+    "start": "cd client && yarn start"
+  }
+}

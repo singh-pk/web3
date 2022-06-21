@@ -1,0 +1,45 @@
+@import '@web3/common/styles/main';
+
+.sidebarContainer {
+  padding: 0 16px;
+
+  .sidebar {
+    position: sticky;
+    top: 0;
+
+    .appIcon {
+      margin: 12px;
+    }
+
+    .navlink {
+      display: flex;
+      height: 60px;
+      color: $primaryColor;
+      font-size: $fontMedium;
+      text-decoration: none;
+
+      & > div {
+        display: flex;
+        align-items: center;
+        padding: 12px;
+        border-radius: $borderRadius;
+        transition: background-color 0.2s;
+
+        & > span:last-child {
+          margin: 16px 20px;
+        }
+      }
+
+      &:hover {
+        & > div {
+          background-color: rgba(231, 233, 234, 0.1);
+        }
+      }
+
+      .active {
+        font-weight: 600;
+        font-size: 20px;
+      }
+    }
+  }
+}

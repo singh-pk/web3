@@ -1,0 +1,42 @@
+@import '@web3/common/styles/main';
+
+.addPost {
+  padding: $padding;
+  border-bottom: $border;
+
+  .header {
+    font-size: $fontMedium;
+  }
+
+  .textarea {
+    font-size: $fontLarge;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: $primaryColor;
+    overflow: hidden;
+    margin: 12px 0 20px;
+    background: transparent;
+    resize: none;
+    min-height: 50px;
+
+    &::placeholder {
+      color: $secondaryColor;
+    }
+  }
+
+  .topics {
+    @include flexCenter;
+    justify-content: space-between;
+
+    .actions {
+      @include flexCenter;
+
+      span {
+        margin-right: 12px;
+        font-size: $fontSmall;
+        color: $secondaryColor;
+      }
+    }
+  }
+}

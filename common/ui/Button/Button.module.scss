@@ -1,0 +1,32 @@
+@import '@web3/common/styles/main';
+
+.button {
+  background: $ternaryBackground;
+  border: none;
+  outline: none;
+  color: $primaryColor;
+  padding: 0 16px;
+  font-size: $fontSmall;
+  font-weight: 600;
+  height: 40px;
+  border-radius: $borderRadius;
+  cursor: pointer;
+
+  &:disabled {
+    cursor: not-allowed;
+    background-color: rgba($ternaryBackground, 0.5);
+    color: rgba($primaryColor, 0.5);
+  }
+
+  @include flexBetween;
+
+  .btnSpinner {
+    margin-left: 10px;
+    height: 25px;
+    width: 25px;
+    border-width: 3px;
+    border-color: transparent;
+    border-top-color: $primaryColor;
+    border-left-color: $primaryColor;
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "extends": "../tsconfig-frontend.json",
+  "compilerOptions": { "downlevelIteration": true },
+  "include": ["ui", "hooks"]
+}

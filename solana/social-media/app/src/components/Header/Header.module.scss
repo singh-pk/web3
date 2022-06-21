@@ -1,0 +1,12 @@
+@import '@web3/common/styles/main';
+
+.header {
+  font-size: 20px;
+  font-weight: bold;
+  padding: $padding;
+  border-bottom: $border;
+  position: sticky;
+  top: 0;
+  background-color: $primaryBackground;
+  z-index: 10;
+}

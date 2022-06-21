@@ -1,0 +1,21 @@
+@import '@web3/common/styles/main';
+
+.post {
+  padding: $padding;
+
+  &:not(:last-child) {
+    border-bottom: $border;
+  }
+
+  .postDetailsSeparator {
+    margin: 0 5px 0 8px;
+  }
+
+  .postContent {
+    margin-top: 8px;
+  }
+
+  .postTopic {
+    margin-top: 15px;
+  }
+}

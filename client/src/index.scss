@@ -1,0 +1,69 @@
+@import '@web3/common/styles/main';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: $primaryBackground;
+  color: $primaryColor;
+
+  a {
+    text-decoration: none;
+    color: $ternaryColor;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.font-lg {
+  font-size: $fontLarge;
+}
+
+.font-md {
+  font-size: $fontMedium;
+}
+
+.font-sm {
+  font-size: $fontSmall;
+}
+
+.font-bold {
+  font-weight: 600;
+}
+
+.color-secondary {
+  color: $secondaryColor;
+}
+
+.color-primary {
+  color: $primaryColor;
+}
+
+.wallet-adapter-dropdown {
+  margin: 12px;
+}
+
+.wallet-adapter-button {
+  width: 100%;
+  justify-content: center;
+  font-size: $fontMedium;
+}
+
+.wallet-adapter-dropdown-list {
+  left: 0;
+}

@@ -1,0 +1,21 @@
+@import '@web3/common/styles/main';
+
+.auth {
+  height: 100vh;
+  @include flexCenter;
+  flex-direction: column;
+
+  .header {
+    font-size: 3rem;
+  }
+
+  .subHeader {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+
+  .btnContainer {
+    max-width: 250px;
+    margin-bottom: 1.5rem;
+  }
+}

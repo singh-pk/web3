@@ -1,0 +1,15 @@
+@import '@web3/common/styles/main';
+
+.app {
+  @include gridCenter;
+
+  .links {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+
+    @include gridCenter;
+    @include gridDirection(column);
+    @include gridGap(15px);
+  }
+}

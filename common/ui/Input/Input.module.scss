@@ -1,0 +1,41 @@
+@import '@web3/common/styles/main';
+
+.inputContainer {
+  position: relative;
+  color: $secondaryColor;
+
+  .icon {
+    position: absolute;
+    left: 10px;
+    height: 50%;
+    top: 25%;
+  }
+
+  .input {
+    padding: 0 0 0 40px;
+    font-size: $fontMedium;
+    height: 40px;
+    background: $secondaryBackground;
+    color: $primaryColor;
+    border: none;
+    outline: none;
+    border-radius: $borderRadius;
+    width: 100%;
+
+    &::placeholder {
+      color: $secondaryColor;
+    }
+  }
+
+  &:focus-within,
+  &.populatedTopics {
+    color: $primaryColor;
+  }
+
+  .inputBtn {
+    position: absolute;
+    height: 30px;
+    top: calc(50% - 15px);
+    right: 20px;
+  }
+}

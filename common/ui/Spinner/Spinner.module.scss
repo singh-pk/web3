@@ -1,0 +1,25 @@
+@import '@web3/common/styles/main';
+
+.spinnerContainer {
+  height: 100%;
+  max-height: 300px;
+  min-height: 150px;
+  display: grid;
+  place-content: center;
+
+  .spinner {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 4.5px solid $primaryBackground;
+    border-top-color: $ternaryBackground;
+    border-left-color: $ternaryBackground;
+    animation: spinner 0.7s linear infinite;
+  }
+
+  @keyframes spinner {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}

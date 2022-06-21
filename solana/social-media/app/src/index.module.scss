@@ -1,0 +1,11 @@
+@import '@web3/common/styles/main';
+
+.socialMedia {
+  @include gridTemplateColumns(minmax(auto, 260px) minmax(auto, 600px));
+  min-height: 100vh;
+
+  main {
+    border-left: $border;
+    border-right: $border;
+  }
+}

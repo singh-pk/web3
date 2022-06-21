@@ -1,0 +1,18 @@
+[features]
+seeds = false
+
+[programs.localnet]
+social_media = "BDruAjq6TmVjeF54BEA75RP29PDZPBmvzWLe1j6fGhm3"
+
+[programs.devnet]
+social_media = "Em6dKWppnzctgydGEGxg3xBmxiAxUnj2vEQYJwQi3RYZ"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
