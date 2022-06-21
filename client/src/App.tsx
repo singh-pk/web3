@@ -30,8 +30,8 @@ const App = () => {
 
       <div className={classes.links}>
         {links.map(({ icon: Icon, fill, height, path }, i) => (
-          <a target='_blank' href={path} rel='noreferrer'>
-            <Icon key={i} fill={fill} height={height} />
+          <a key={i} target='_blank' href={path} rel='noreferrer'>
+            <Icon fill={fill} height={height} />
           </a>
         ))}
       </div>
